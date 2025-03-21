@@ -1,6 +1,13 @@
 import requests
 import json
 
+# Function to validate latitude and longitude
+def validate_coordinates(lat, lon):
+    if lat < -90 or lat > 90:
+        raise ValueError(f"Invalid coordinates: latitude of {lat} must be between -90 and 90 degrees.")
+    if lon < -180 or lon > 180:
+        raise ValueError(f"Invalid coordinates: longitude of {lon} must be between -180 and 180 degrees.")
+
 # DEFINE THE VARIABLES
 
 # API KEY 
@@ -10,6 +17,8 @@ api_key = "vmbWXI9uCmhdEUcjZJ8GhcPWM5PQEKk6PCxkJNae"
 lat =   	35.782169
 lon =      -80.793457
 
+# Validate coordinates
+validate_coordinates(lat, lon)
 # SELECT THE SECTORS FROM THE 4 GIVEN 
 sector = "Commercial"  # Residential, Commercial, Industrial, or Lighting
 
@@ -25,7 +34,7 @@ url = (
     f"&lat={lat}"
     f"&lon={lon}"
     f"&sector={sector}"
-    f"&order = {order}"
+    f"&order ={order}"
 )
 
 # MAKE THE API REQUEST
