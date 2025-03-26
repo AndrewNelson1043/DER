@@ -10,8 +10,8 @@ import json
 api_key = "vmbWXI9uCmhdEUcjZJ8GhcPWM5PQEKk6PCxkJNae"
 
 # LATITUDE AND LONGITUDE FROM THE GOOGLE MAP LOCATION
-lat =   	35.782169
-lon =      -80.793457
+lat =   	35.419872
+lon =      -79.469442
 # SELECT THE SECTORS FROM THE 4 GIVEN 
 sector = "Commercial"  # Residential, Commercial, Industrial, or Lighting
 
