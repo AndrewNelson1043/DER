@@ -14,8 +14,8 @@ def validate_coordinates(lat, lon):
 api_key = "vmbWXI9uCmhdEUcjZJ8GhcPWM5PQEKk6PCxkJNae"
 
 # LATITUDE AND LONGITUDE FROM THE GOOGLE MAP LOCATION
-lat =   	35.419872
-lon =      -79.469442
+lat =   	35.782169
+lon =      -80.793457
 
 # Validate coordinates
 validate_coordinates(lat, lon)

@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 # GETTING THE TARIFF DATA
 
-label = "552e906a5357a3435940adda"
+label = "67816b47d8716d96d309a3cf"
 
 # API Request to Get Utility Tariff Data
 url = (
